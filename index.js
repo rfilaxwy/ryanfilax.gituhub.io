@@ -9,18 +9,17 @@ const skills = [
 ];
 
 const contacts = {
-  github: "",
-  linkedin: "",
-  "project un": "",
-  "project deux": ""
+  github: "https://github.com/rfilaxwy",
+  linkedin: "https://www.linkedin.com/in/ryan-filax-wylie",
+  "project un": "www.ryanfw.ca",
+  "project deux": "www.cloudtest.ca"
 };
 
 for (let i = 0; i < skills.length; i++) {
   let liString;
   var node = document.createElement("LI");
   if (i !== skills.length - 1) {
-    console.log(skills[i]);
-    liString = skills[i] + "                                  |";
+    liString = skills[i] + "|";
   } else {
     liString = skills[i];
   }
@@ -31,8 +30,10 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 for (let contact in contacts) {
-  var node = document.createElement("LI");
+  var node = document.createElement("A");
   var textnode = document.createTextNode(contact);
   node.appendChild(textnode);
+  node.href = contacts[contact];
+  node.target = 'target="_blank';
   document.getElementById("contact").appendChild(node);
 }

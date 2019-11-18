@@ -21,7 +21,5 @@
     "url": "https://github.com/rfilaxwy/ryanfilax.gituhub.io/issues"
   },
   "homepage": "https://github.com/rfilaxwy/ryanfilax.gituhub.io#readme",
-  "devDependencies": {
-    "less": "^3.10.3"
-  }
+  "devDependencies": {}
 }
